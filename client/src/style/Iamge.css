@@ -1,0 +1,51 @@
+body {
+    padding: 0;
+    margin: 0;
+  }
+  .wrapper {
+    height: 110px;
+    width: 110px;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    margin: 2% 10%;
+    overflow: hidden;
+  }
+  .my_file {
+    position: absolute;
+    bottom: 0;
+    outline: none;
+    color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .my_file::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .my_file::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "upload";
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 15px;
+    margin-left: -14px;
+    color: #fff;
+    display: inline-block;
+    /* -webkit-user-select: none; */
+  }
+  .my_file::after {
+    content: "";
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    top: 70px;
+    /* font-size: 14px; */
+    position: absolute;
+    display: block;
+  }
+  
